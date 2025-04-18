@@ -10,6 +10,7 @@ public class Voo {
 
     public Voo(String destino,int numVoo, double preco){
         this.destino = destino;
+        this.numVoo = numVoo;
         this.preco = preco;
     }
 
@@ -24,6 +25,7 @@ public class Voo {
     public String toString() {
         return "Voo{" +
                 "destino='" + destino + '\'' +
+                ", numVoo=" + numVoo +
                 ", preco=" + preco +
                 ", passageiros=" + Arrays.toString(passageiros) +
                 '}';
