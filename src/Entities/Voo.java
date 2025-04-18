@@ -4,10 +4,11 @@ import java.util.Arrays;
 
 public class Voo {
     private String destino;
+    private int numVoo;
     private double preco;
     private Passageiro[] passageiros = new Passageiro[30];
 
-    public Voo(String destino, double preco){
+    public Voo(String destino,int numVoo, double preco){
         this.destino = destino;
         this.preco = preco;
     }
@@ -16,6 +17,7 @@ public class Voo {
         return passageiros;
     }
     public String getDestino(){return destino;}
+    public int getNumVoo(){return numVoo;}
     public double getPreco(){return preco;}
 
     @Override
