@@ -18,13 +18,13 @@ public class GerenciadorPassageiro {
         }
         Passageiro novoPassageiro = new Passageiro(name,cpf);
         passageiroList.add(novoPassageiro);
+        System.out.println("Passageiro Cadastrado com sucesso");
         return true;
     }
 
     public Passageiro procurarPassageiro(String cpf){
         for(Passageiro p: passageiroList){
             if (p.getCpf().equals(cpf)) {
-                System.out.println("Passageiro encontrado");
                 return p;
             }
         }
