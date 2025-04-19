@@ -58,9 +58,16 @@ public class Main {
                     gerenciarReserva.addReserva(numVoop,cadeira, gerenciadorPassageiro.procurarPassageiro(buscaCpf) );
                     break;
                 case 4:
-
+                    System.out.print("Qual seu Cpf: ");
+                    String cpfRemove = sc.nextLine();
+                    gerenciarReserva.removeReserva(cpfRemove);
+                    break;
                 case 5:
+                    System.out.println("Até logo!");
+                    return;
                 default:
+                    System.out.println("Digite um numero valido");
+                    break;
             }
         }
 
